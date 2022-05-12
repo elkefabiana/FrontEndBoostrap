@@ -14,7 +14,7 @@
     --cor9:#32211d!important;
     --cor10:#5E3C33!important;
 }
-gerais*/
+/*gerais*/
 .body{
     background-color:#78857B;
     font-family: 'Roboto', sans-serif;
@@ -82,7 +82,7 @@ top: 40%;
     font-size: medium;
     text-transform: uppercase;
     text-decoration: none;
-    width: 200px;
+    width: 150px;
     height: 80px;
     border-radius: 15px;
     border: 4px solid #a6b6ab3b;
@@ -313,9 +313,8 @@ progressbar-text{
     font-size: 28px;
 }
 #msg-box a{
-    text-decoration: none;
-}
-    text-align: center;
+    text-decoration: none;text-align: center;
+}   
 #contact-form input[type=text], #contact-form input[type=email], #contact-form textarea{
     margin-bottom: 15px;
     border-radius: 0px;
@@ -350,4 +349,171 @@ progressbar-text{
 #copy-area .container a:hover{
     text-decoration: none;
     color: #c6d3caea;
+}
+/*responsive*/
+@media(max-width: 1024px){
+    /*geral*/
+    .container{
+        padding: 20px  0;
+    }
+    /*slaider*/
+    .container-fluid{
+        padding: 0px;
+    }
+    #carouselIndicators .carousel-inner, .carousel-item{
+        height: 100vh;
+    }
+    #carouselIndicators .carousel-caption{
+    top: 35%;
+    }
+    #main-slider .carousel-caption h2{
+        font-size: 28px;
+    }
+    #main-slider .carousel-caption p{
+        font-size: 18px;
+        margin-bottom: 40px;  
+    }
+    .carousel-caption{
+        left: 10%;
+        right: 10%;
+    }
+    /*about*/
+    #about-area img{
+        margin-top: 100px;
+    }
+}
+/*DATA-AREA*/
+#data-area p{
+    font-size: 22px;
+}
+/* news*/
+#news-area p{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#email-input{
+    width: 70%;
+}
+#call-area {
+    margin-top: 30px;
+}
+#call-area .container{
+    padding: 30px;
+}
+#call-area btn{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+#call-area p, #call-area #call-btn{
+    font-size: 16px;
+}
+
+/*slaider*/
+@media(max-width: 570px){  
+    #carouselIndicators .carousel-caption{
+        left: 0;
+        right: 0;  
+    }
+    #carouselIndicators .carousel-caption .container-fluid{
+        height: 40%;
+    }
+    #carouselIndicators .carousel-caption h2{
+        font-size: 0px;
+        margin-top: 180px;
+        margin-bottom: 60px;
+    }
+    #carouselIndicators .carousel-caption p{
+        display: none;
+    }
+    
+}
+@media(max-width: 667px){  
+    #carouselIndicators .carousel-caption{
+        left: 0;
+        right: 0;
+    }
+    #carouselIndicators .carousel-caption .container-fluid{
+        height: 40%;
+    }
+    #carouselIndicators .carousel-caption h2{
+        font-size: 20px;
+        margin-top: 150px;
+        margin-bottom: 20px;
+    }
+    #carouselIndicators .carousel-caption p{
+        display: none;
+    }
+    #carouselIndicators .carousel-caption .main-btn{
+        margin-bottom: auto;
+        font-size: 12px;
+    }
+    /*about*/
+    .main-title{
+        font-size: 35px;
+        margin-top: 10px;
+        margin-bottom:20px;
+    }
+    #about-area img{
+        display: block; 
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 80px;        
+    }
+    #about-area .container{
+        padding: 0;
+    }
+    #about-area .about-title{
+        text-align: center;
+    }
+    /*news*/
+    #newsletter-area{
+        margin-top: 20px;
+        
+    }
+    #newsletter-area .container{
+        padding: 50px;
+
+    }
+    #newsletter-area h3{
+        font-size: 30px;
+        margin-top: auto;
+        margin-bottom: 60px;
+
+    }
+    #newsletter-area p{
+        font-size: 18px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;       
+    }
+    #newsletter-area #email{
+        width: 80%;
+        margin-top: 60px;
+    }
+    /*call to action*/
+    #call-area{
+        margin-top: 20px;
+    }
+    #call-area .container{
+        padding: 10px;
+    }
+    #call-area p, #call-area #call-btn{
+        font-size: 20px;
+    }
+    #data-area p{
+        font-size: 18px;
+    }
+    #data-area .row{
+        display: block;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #copy-area{
+        height: 30px; 
+    }
+    #copy-area p{
+        font-size: 5px;
+    }
 }
